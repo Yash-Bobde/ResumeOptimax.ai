@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
 
-## Project info
+💼 ResumeOptimax
 
-**URL**: https://lovable.dev/projects/9d8af170-873f-403b-bd43-21809bd77c4a
+An AI-powered resume enhancement platform that helps job seekers tailor their resumes to specific job descriptions using modern AI and web technologies.
 
-## How can I edit this code?
+🔍 Overview
 
-There are several ways of editing your application.
+ResumeOptimax allows users to:
+- Upload resumes in .PDF, .DOCX, .DOC, or .TXT format
+- Upload or paste a job description
+- Instantly enhance the resume using Google Gemini AI
+- View, copy, and download the optimized resume in multiple formats
 
-**Use Lovable**
+Designed to maximize ATS (Applicant Tracking System) compatibility, highlight relevant skills, and increase interview conversion rates.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9d8af170-873f-403b-bd43-21809bd77c4a) and start prompting.
+🚀 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+Frontend: React 18, TypeScript, Tailwind CSS, ShadCN UI, Vite
+Backend: Node.js + Express.js, REST API, dotenv, CORS, Body-Parser
+AI: Google Gemini API
 
-**Use your preferred IDE**
+📸 Screenshots
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+(Place images like ./screenshots/upload.png, ./screenshots/enhanced.png here)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🛠 Features
 
-Follow these steps:
+- Resume + Job Description parsing
+- AI-powered content rewriting
+- PDF, DOCX, and TXT export options
+- Live preview editor
+- Environment variables for API key security
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+📂 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+resume-optimax-ai/
+├── backend/
+│   ├── routes/
+│   ├── services/
+│   ├── .env
+│   └── index.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   └── pages/
+│   └── vite.config.ts
+└── README.md
 
-# Step 3: Install the necessary dependencies.
-npm i
+🔧 Setup Instructions
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. Prerequisites
 
-**Edit a file directly in GitHub**
+- Node.js (v18+ recommended)
+- NPM
+- A valid Google Generative AI (Gemini) API Key
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Clone the Repo
 
-**Use GitHub Codespaces**
+git clone https://github.com/YOUR_USERNAME/resume-optimax-ai.git
+cd resume-optimax-ai
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. Set Up Backend
 
-## What technologies are used for this project?
+cd backend
+npm install
 
-This project is built with:
+Create a .env file in /backend:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+GEMINI_API_KEY=your_google_gemini_api_key
 
-## How can I deploy this project?
+Then start the backend server:
 
-Simply open [Lovable](https://lovable.dev/projects/9d8af170-873f-403b-bd43-21809bd77c4a) and click on Share -> Publish.
+npm start  # Running at http://localhost:5000
 
-## Can I connect a custom domain to my Lovable project?
+4. Set Up Frontend
 
-Yes, you can!
+cd frontend
+npm install
+npm run dev  # Running at http://localhost:8080
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🛡️ Environment Variables
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+To keep your secrets secure, create a .env file (excluded from Git) containing:
+
+GEMINI_API_KEY=your_key_here
+
+Also provide a safe .env.example with:
+
+GEMINI_API_KEY=
+
+📄 License
+
+This project is licensed under the MIT License.
+
+✨ Author
+
+Made with 💻 by Yash Bobde
+GitHub: https://github.com/Yash-Bobde
+Portfolio: https://yash-bobde.vercel.app/
+LinkedIn: https://www.linkedin.com/in/yash-bobde/
