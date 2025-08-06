@@ -1,5 +1,5 @@
 
-💼 ResumeOptimax
+💼 **ResumeOptimax**
 
 An AI-powered resume enhancement platform that helps job seekers tailor their resumes to specific job descriptions using modern AI and web technologies.
 
@@ -57,7 +57,7 @@ resume-optimax-ai/
 
 2. Clone the Repo
 
-git clone https://github.com/YOUR_USERNAME/resume-optimax-ai.git
+git clone https://github.com/Yash-Bobde/ResumeOptimax.ai.git
 cd resume-optimax-ai
 
 3. Set Up Backend
