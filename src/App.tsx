@@ -20,6 +20,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <footer className="text-center py-4 text-sm text-gray-500">
+        Made with <span className="text-red-500">❤️</span> by <strong>Yash</strong>
+      </footer>
     </TooltipProvider>
   </QueryClientProvider>
 );
